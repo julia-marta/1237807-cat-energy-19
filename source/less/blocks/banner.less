@@ -1,0 +1,68 @@
+.banner {
+  box-sizing: border-box;
+  width: 280px;
+  padding-top: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 18px;
+  background-color: @bg-grey;
+}
+
+.banner__title {
+  .indents-none();
+  .title-upper();
+  position: relative;
+  padding-left: 71px;
+  margin-bottom: 40px;
+  color: @title-black;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 2px;
+    width: 50px;
+    height: 50px;
+    background-color: @green;
+    border-radius: 50%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  &--slim::before {
+    top: -17px;
+    left: 10px;
+    width: 35px;
+    height: 49px;
+    background-image: url("../img/icon-cat-slim.svg");
+  }
+
+  &--pro::before {
+    top: -4px;
+    left: -7px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/icon-cat-pro.svg");
+  }
+}
+
+.banner__text {
+  .indents-none();
+  width: 240px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid fade(@black, 10%);
+}
+
+
+.banner__to-catalog {
+  .title-upper(16px);
+  line-height: 16px;
+  color: @title-black;
+}

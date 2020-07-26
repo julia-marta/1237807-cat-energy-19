@@ -1,0 +1,37 @@
+.scale {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 43px;
+}
+
+.scale__button {
+  .indents-none();
+  .title-upper(16px);
+  line-height: 20px;
+  color: @title-black;
+  background: none;
+  border: none;
+}
+
+.scale__range {
+  position: relative;
+  box-sizing: border-box;
+  width: 84px;
+  height: 14px;
+  margin-left: 18px;
+  margin-right: 18px;
+  background-color: @white;
+  border: solid 1px @round-border-grey;
+  border-radius: 6px;
+}
+
+.scale__toggle {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 35px;
+  height: 6px;
+  background-color: @green;
+  border-radius: 3px;
+}

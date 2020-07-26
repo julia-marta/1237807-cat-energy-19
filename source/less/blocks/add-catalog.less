@@ -1,0 +1,60 @@
+.add-catalog {
+  background-color: @white;
+}
+
+.add-catalog__wrapper {
+  .paddings(20px);
+  padding-top: 28px;
+  padding-bottom: 35px;
+}
+
+.add-catalog__list {
+  .indents-none();
+  margin-bottom: 39px;
+}
+
+.add-catalog__title {
+  .indents-none();
+  .inline-block();
+  .title(24px);
+  position: relative;
+  padding-right: 22px;
+  margin-bottom: 34px;
+  line-height: 24px;
+  color: @title-black;
+  background-color: @white;
+  z-index: 1;
+}
+
+.add-catalog__promo {
+  width: 280px;
+  height: 289px;
+  text-align: center;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.add-catalog__promo-text {
+  .indents-none();
+  .inline-block();
+  position: relative;
+  width: 165px;
+  margin-top: 65px;
+  padding-top: 123px;
+  font-size: 16px;
+  line-height: 20px;
+  color: @white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 55px;
+    width: 56px;
+    height: 61px;
+    background-image: url("../img/icon-gift.svg");
+    background-position: center;
+    background-repeat: no-repeat, no-repeat;
+  }
+}
