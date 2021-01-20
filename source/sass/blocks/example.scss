@@ -1,0 +1,151 @@
+.example {
+  background-color: $bg-grey;
+}
+
+.example__wrapper {
+  padding-top: 15px;
+  padding-bottom: 36px;
+}
+
+.example__description {
+  @include paddings(20px);
+}
+
+.example__title {
+  @include indents-none;
+  @include title;
+  margin-bottom: 25px;
+  line-height: 60px;
+  color: $title-black;
+}
+
+.example__text {
+  @include indents-none;
+  margin-bottom: 24px;
+}
+
+.example__data {
+  margin-bottom: 35px;
+}
+
+.example__statistic {
+  @include indents-none;
+  margin-bottom: 34px;
+}
+
+.example__cost {
+  @include indents-none;
+  @include title-upper(14px);
+  margin-top: 7px;
+  text-align: center;
+}
+
+
+@media (min-width: $tablet-width) {
+  .example {
+    position: relative;
+    background-color: $white;
+    border-top: 1px solid $border-grey;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 462px;
+      background-image: linear-gradient(to right, $bg-grey 50%, $bg-darkgrey 50%);
+    }
+  }
+
+  .example__wrapper {
+    position: relative;
+    padding-top: 42px;
+    padding-bottom: 67px;
+    z-index: 1;
+  }
+
+  .example__description {
+    @include paddings(30px);
+    margin-bottom: 25px;
+  }
+
+  .example__title {
+    margin-bottom: 65px;
+    font-size: 60px;
+  }
+
+  .example__data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 52px;
+  }
+
+  .example__text {
+    margin-bottom: 52px;
+  }
+
+  .example__cost {
+    width: 175px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    border-color: $white;
+  }
+
+  .example__wrapper {
+    @include paddings(110px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 10px;
+    padding-bottom: 18px;
+  }
+
+  .example__description {
+    padding: 0;
+    padding-top: 55px;
+    margin-bottom: 0;
+    margin-right: 84px;
+  }
+
+  .example__title {
+    margin-bottom: 147px;
+  }
+
+  .example__text {
+    width: 440px;
+    margin-bottom: 67px;
+  }
+
+  .example__data {
+    width: 370px;
+    flex-direction: row;
+  }
+
+  .example__statistic {
+    margin-bottom: 55px;
+  }
+
+  .example__images {
+    width: 690px;
+  }
+
+  .example__cost {
+    width: auto;
+    text-align: left;
+    margin-top: 0;
+
+    &--sum {
+      margin-left: 60px;
+    }
+  }
+}

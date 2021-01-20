@@ -1,0 +1,37 @@
+.add-products {
+  @include list-reset;
+}
+
+.add-products__item {
+  padding-top: 12px;
+  padding-bottom: 17px;
+  border-top: 1px solid $round-border-grey;
+
+  &:last-child {
+    border-bottom: 1px solid $round-border-grey;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .add-products__item {
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-top: 25px;
+    padding-bottom: 27px;
+    border-color: $border-grey;
+    border-left: 1px solid $border-grey;
+    border-right: 1px solid $border-grey;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-products__item {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    border-left: none;
+    border-right: none;
+  }
+}

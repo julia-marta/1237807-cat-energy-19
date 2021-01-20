@@ -1,0 +1,27 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.copyright__title {
+  @include indents-none;
+  font-size: 16px;
+  line-height: 16px;
+  color: $text-grey;
+}
+
+.copyright__logo {
+  margin-right: -6px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 0;
+  }
+
+  .copyright__title {
+    margin-right: 15px;
+  }
+}

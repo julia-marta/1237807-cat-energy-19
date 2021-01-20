@@ -1,0 +1,21 @@
+body {
+  @include indents-none;
+  min-width: 320px;
+  font-family: "ArialMT", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  color: $text-grey;
+  background-color: $white;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

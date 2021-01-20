@@ -1,0 +1,42 @@
+.advantages {
+  background-color: $white;
+}
+
+.advantages__wrapper {
+  @include paddings(20px);
+  padding-top: 5px;
+  padding-bottom: 45px;
+}
+
+.advantages__title {
+  @include indents-none;
+  @include title;
+  margin-bottom: 28px;
+  line-height: 60px;
+  color: $title-black;
+}
+
+.advantages__list {
+  @include indents-none;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__wrapper {
+    @include paddings(30px);
+    padding-top: 45px;
+    padding-bottom: 43px;
+  }
+
+  .advantages__title {
+    margin-bottom: 72px;
+    font-size: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__wrapper {
+    @include paddings(110px);
+    padding-top: 73px;
+    padding-bottom: 0;
+  }
+}

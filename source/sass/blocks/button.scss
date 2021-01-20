@@ -1,0 +1,32 @@
+.button {
+  @include inline-block;
+  @include title-upper(16px);
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  line-height: 20px;
+  color: $white;
+  background-color: $green;
+  border: none;
+
+  &--small {
+    @include title-upper(14px);
+  }
+
+  &--grey {
+    color: $text-grey;
+    background-color: $bg-grey;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    &--small,
+    &--submit {
+      padding-top: 15px;
+      padding-bottom: 17px;
+      font-size: 20px;
+    }
+  }
+}

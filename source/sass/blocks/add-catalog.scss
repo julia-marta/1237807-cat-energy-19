@@ -1,0 +1,135 @@
+.add-catalog {
+  background-color: $white;
+  padding-top: 28px;
+  padding-bottom: 35px;
+}
+
+.add-catalog__title {
+  @include indents-none;
+  @include inline-block;
+  @include title(24px);
+  position: relative;
+  padding-right: 22px;
+  margin-bottom: 34px;
+  margin-left: 20px;
+  line-height: 24px;
+  color: $title-black;
+  background-color: $white;
+  z-index: 1;
+}
+
+.add-catalog__wrapper {
+  @include paddings(20px);
+}
+
+.add-catalog__list {
+  @include indents-none;
+  margin-bottom: 39px;
+}
+
+.add-catalog__promo {
+  width: 280px;
+  height: 289px;
+  text-align: center;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.add-catalog__promo-text {
+  @include indents-none;
+  @include inline-block;
+  position: relative;
+  width: 165px;
+  margin-top: 65px;
+  padding-top: 123px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 55px;
+    width: 56px;
+    height: 61px;
+    background-image: url("../img/icon-gift.svg");
+    background-position: center;
+    background-repeat: no-repeat, no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  @media (max-width: $tablet-width-only) {
+    .add-catalog__promo {
+      width: 708px;
+      height: 200px;
+      text-align: right;
+      background-image: url("../img/gift-photo-tablet@1x.jpg");
+    }
+
+    .add-catalog__promo-text {
+      margin-top: 73px;
+      margin-right: 120px;
+      padding-top: 0;
+      text-align: left;
+
+      &::before {
+        top: -8px;
+        left: -333px;
+      }
+    }
+  }
+
+  .add-catalog {
+    padding-top: 6px;
+    padding-bottom: 76px;
+  }
+
+  .add-catalog__title {
+    margin-bottom: 80px;
+    margin-left: 30px;
+    padding-left: 38px;
+    padding-right: 38px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .add-catalog__wrapper {
+    @include paddings(30px);
+  }
+
+  .add-catalog__list {
+    margin-bottom: 69px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-catalog {
+    padding-top: 11px;
+    padding-bottom: 86px;
+  }
+
+  .add-catalog__title {
+    margin-left: 71px;
+  }
+
+  .add-catalog__wrapper {
+    @include paddings(110px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .add-catalog__list {
+    width: 895px;
+    margin-right: 80px;
+    margin-bottom: 0;
+  }
+
+  .add-catalog__promo {
+    width: 245px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+}

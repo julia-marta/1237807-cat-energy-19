@@ -1,0 +1,31 @@
+@mixin list-reset {
+  list-style: none;
+}
+
+@mixin indents-none {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin paddings($size: 20px) {
+  padding-left: $size;
+  padding-right: $size;
+}
+
+@mixin inline-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@mixin title($size: 36px) {
+  font-family: "Oswald", "ArialMT", sans-serif;
+  font-size: $size;
+  font-weight: normal;
+}
+
+@mixin title-upper($size: 24px) {
+  font-family: "Oswald", "ArialMT", sans-serif;
+  font-size: $size;
+  font-weight: normal;
+  text-transform: uppercase;
+}

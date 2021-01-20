@@ -1,0 +1,43 @@
+.profile {
+  background-color: $white;
+}
+
+.profile__wrapper {
+  padding-bottom: 29px;
+}
+
+.profile__message {
+  @include indents-none;
+  @include title-upper(14px);
+  width: 230px;
+  margin-left: 20px;
+  margin-bottom: 38px;
+  line-height: 18px;
+  color: $title-black;
+}
+
+@media (min-width: $tablet-width) {
+  .profile__wrapper {
+    padding-bottom: 72px;
+  }
+
+  .profile__message {
+    width: 330px;
+    margin-left: 70px;
+    margin-top: 1px;
+    margin-bottom: 65px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .profile__wrapper {
+    padding-bottom: 82px;
+  }
+
+  .profile__message {
+    margin-top: 0;
+    margin-left: 110px;
+  }
+}

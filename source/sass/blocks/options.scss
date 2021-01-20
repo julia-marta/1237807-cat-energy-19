@@ -1,0 +1,28 @@
+.options {
+  background-color: $white;
+}
+
+.options__wrapper {
+  @include paddings(20px);
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.options__list {
+  @include indents-none;
+}
+
+@media (min-width: $tablet-width) {
+  .options__wrapper {
+    @include paddings(30px);
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .options__wrapper {
+    @include paddings(110px);
+    padding-top: 78px;
+  }
+}

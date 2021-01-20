@@ -1,0 +1,129 @@
+.intro {
+  text-align: center;
+  background-color: $white;
+  color: $white;
+}
+
+.intro__wrapper {
+  @include paddings(20px);
+  box-sizing: border-box;
+  padding-top: 27px;
+  padding-bottom: 11px;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.intro__title {
+  @include indents-none;
+  @include title;
+  margin-bottom: 25px;
+  line-height: 36px;
+}
+
+.intro__slogan {
+  @include indents-none;
+  @include title-upper(14px);
+  margin-bottom: 28px;
+  line-height: 14px;
+}
+
+.intro__picture {
+  margin-bottom: 4px;
+}
+
+.intro__image {
+  display: block;
+}
+
+.intro__to-form {
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    color: $title-black;
+    text-align: left;
+  }
+
+  .intro__wrapper {
+    @include paddings(30px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 57px;
+    padding-bottom: 0;
+    background-image: none;
+  }
+
+  .intro__title {
+    width: 415px;
+    margin-left: 87px;
+    margin-bottom: 42px;
+    font-size: 60px;
+    line-height: 60px;
+    order: 1;
+  }
+
+  .intro__slogan {
+    margin-left: 88px;
+    margin-bottom: 48px;
+    font-size: 20px;
+    line-height: 20px;
+    order: 2;
+  }
+
+  .intro__picture {
+    margin-bottom: 0;
+    margin-top: -80px;
+    order: 4;
+    z-index: 1;
+  }
+
+  .intro__image {
+    width: 709px;
+    height: 609px;
+  }
+
+  .intro__to-form {
+    width: 245px;
+    margin-left: 89px;
+    order: 3;
+    z-index: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    background-color: transparent;
+  }
+
+  .intro__wrapper {
+    @include paddings(110px);
+    padding-top: 108px;
+    padding-bottom: 57px;
+  }
+
+  .intro__title {
+    margin-left: 80px;
+  }
+
+  .intro__slogan {
+    margin-left: 80px;
+    margin-bottom: 53px;
+  }
+
+  .intro__picture {
+    margin-top: -366px;
+    margin-left: 450px;
+  }
+
+  .intro__image {
+    width: 552px;
+    height: auto;
+  }
+
+  .intro__to-form {
+    margin-left: 80px;
+  }
+}

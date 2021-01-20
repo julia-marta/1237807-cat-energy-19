@@ -1,0 +1,31 @@
+.line {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 42px;
+    right: 0;
+    width: 70%;
+    height: 3px;
+    background-color: $green;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .line {
+    &::before {
+      top: 30px;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .line {
+    &::before {
+      top: 33px;
+    }
+  }
+}

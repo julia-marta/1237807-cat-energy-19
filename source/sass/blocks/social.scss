@@ -1,0 +1,38 @@
+.social {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 22px;
+  padding-bottom: 21px;
+  border-top: 1px solid rgba($black, 0.1);
+  border-bottom: 1px solid rgba($black, 0.1);
+}
+
+.social__item {
+  width: 22px;
+  height: 19px;
+  margin-right: 34px;
+  outline: 2px solid black;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    border: none;
+    padding: 0;
+  }
+
+  .social__item {
+    width: 30px;
+    height: 28px;
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

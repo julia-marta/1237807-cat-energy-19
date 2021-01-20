@@ -1,0 +1,25 @@
+.main-catalog {
+  background-color: $white;
+}
+
+.main-catalog__wrapper {
+  padding-top: 3px;
+}
+
+.main-catalog__list {
+  @include indents-none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-catalog__wrapper {
+    @include paddings(30px);
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-catalog__wrapper {
+    @include paddings(110px);
+    padding-top: 30px;
+  }
+}
