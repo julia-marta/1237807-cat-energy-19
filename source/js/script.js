@@ -1,17 +1,17 @@
 // menu mobile
 
-const navigation = document.querySelector(".site-navigation");
-const menuToggle = document.querySelector(".site-navigation__toggle");
+const navigation = document.querySelector(".site-header");
+const menuToggle = document.querySelector(".site-header__toggle");
 
-navigation.classList.remove("site-navigation--nojs");
+navigation.classList.remove("site-header--nojs");
 
 const menuToggleClickHandler = function () {
-  if (navigation.classList.contains("site-navigation--closed")) {
-    navigation.classList.remove("site-navigation--closed");
-    navigation.classList.add("site-navigation--opened");
+  if (navigation.classList.contains("site-header--closed")) {
+    navigation.classList.remove("site-header--closed");
+    navigation.classList.add("site-header--opened");
   } else {
-    navigation.classList.add("site-navigation--closed");
-    navigation.classList.remove("site-navigation--opened");
+    navigation.classList.add("site-header--closed");
+    navigation.classList.remove("site-header--opened");
   }
 }
 

@@ -10,7 +10,7 @@
   @include paddings(20px);
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding-top: 28px;
   padding-bottom: 27px;
 }
@@ -27,14 +27,13 @@
   @include indents-none;
   width: 138px;
   line-height: 20px;
-  margin-top: 2px;
 }
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
     @include paddings(70px);
-    padding-top: 65px;
-    padding-bottom: 57px;
+    padding-top: 62px;
+    padding-bottom: 58px;
   }
 
   .contacts__call {

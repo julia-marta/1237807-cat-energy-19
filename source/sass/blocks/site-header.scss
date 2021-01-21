@@ -11,13 +11,81 @@
   @include paddings(20px);
   padding-top: 10px;
   padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .site-header__logo-image {
   display: block;
 }
 
+.site-header__toggle {
+  @include indents-none;
+  @include inline-block;
+  position: relative;
+  width: 25px;
+  height: 19px;
+  margin-top: 6px;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    top: 0;
+    right: 0;
+    transition: all 0.4s;
+  }
+}
+
+.site-header--closed .site-header__toggle {
+  &::before {
+    background-color: $upper-title-black;
+    box-shadow: 0 8px 0 0 $upper-title-black, 0 16px 0 0 $upper-title-black;
+  }
+}
+
+.site-header--opened .site-header__toggle {
+  &::before,
+  &::after {
+    top: 8px;
+    background-color: $black;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.site-header__navigation-list {
+  @include indents-none;
+}
+
+@media (max-width: $mobile-width-only) {
+  .site-header--closed .main-menu__item {
+    display: none;
+  }
+
+  .site-header--nojs .main-menu__item {
+    display: block;
+  }
+
+  .site-header--nojs .site-header__toggle {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .site-header__toggle {
+    display: none;
+  }
+
   .site-header__wrapper {
     @include paddings(30px);
     display: flex;

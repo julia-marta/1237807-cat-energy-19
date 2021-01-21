@@ -1,9 +1,6 @@
 .profile {
   background-color: $white;
-}
-
-.profile__wrapper {
-  padding-bottom: 29px;
+  padding-bottom: 31px;
 }
 
 .profile__message {
@@ -17,7 +14,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .profile__wrapper {
+  .profile {
     padding-bottom: 72px;
   }
 
@@ -32,7 +29,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .profile__wrapper {
+  .profile {
     padding-bottom: 82px;
   }
 

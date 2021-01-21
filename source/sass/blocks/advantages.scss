@@ -5,13 +5,13 @@
 .advantages__wrapper {
   @include paddings(20px);
   padding-top: 5px;
-  padding-bottom: 45px;
+  padding-bottom: 47px;
 }
 
 .advantages__title {
   @include indents-none;
   @include title;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
   line-height: 60px;
   color: $title-black;
 }
@@ -23,7 +23,7 @@
 @media (min-width: $tablet-width) {
   .advantages__wrapper {
     @include paddings(30px);
-    padding-top: 45px;
+    padding-top: 46px;
     padding-bottom: 43px;
   }
 

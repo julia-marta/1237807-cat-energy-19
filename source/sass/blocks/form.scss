@@ -9,9 +9,9 @@
   @include title(24px);
   position: relative;
   max-width: 182px;
-  margin-top: 29px;
+  margin-top: 28px;
   padding-right: 22px;
-  margin-left: 19px;
+  padding-left: 19px;
   line-height: 24px;
   color: $title-black;
   background-color: $white;
@@ -29,13 +29,13 @@
   }
 
   &--target {
-    padding-top: 25px;
-    padding-bottom: 24px;
+    padding-top: 26px;
+    padding-bottom: 25px;
     border: 1px solid $border-lightgrey;
   }
 
   &--contacts {
-    padding-top: 32px;
+    padding-top: 33px;
   }
 
   &--comment {
@@ -43,7 +43,7 @@
   }
 
   &--add {
-    padding-top: 39px;
+    padding-top: 40px;
   }
 }
 
@@ -59,8 +59,15 @@
   &--target,
   &--add {
     position: relative;
-    margin-bottom: 21px;
+    margin-bottom: 22px;
+  }
+
+  &--target {
     padding-left: 46px;
+  }
+
+  &--add {
+    padding-left: 47px;
   }
 
   &:last-child {
@@ -123,7 +130,7 @@
 .form__textarea {
   display: block;
   min-height: 150px;
-  padding-top: 11px;
+  padding-top: 12px;
   padding-left: 15px;
   resize: none;
 }
@@ -163,14 +170,14 @@
 }
 
 .form__footer {
-  padding-top: 37px;
+  padding-top: 39px;
 }
 
 .form__to-submit {
   display: block;
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .form__footnote {
@@ -189,7 +196,7 @@
 
   .form__section-title {
     max-width: 100%;
-    margin-top: 8px;
+    margin-top: 6px;
     margin-left: 29px;
     padding-left: 40px;
     padding-right: 42px;
@@ -207,7 +214,7 @@
 
     &--target {
       padding-top: 33px;
-      padding-bottom: 28px;
+      padding-bottom: 30px;
       padding-left: 29px;
       padding-right: 30px;
     }
@@ -215,12 +222,12 @@
     &--contacts {
       padding-right: 65px;
       padding-top: 75px;
-      padding-bottom: 57px;
+      padding-bottom: 59px;
     }
 
     &--comment {
       padding-top: 76px;
-      padding-bottom: 58px;
+      padding-bottom: 60px;
     }
 
     &--add {
@@ -232,7 +239,7 @@
   .form__list--add {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 45px;
+    row-gap: 46px;
     column-gap: 60px;
   }
 
@@ -243,7 +250,7 @@
     }
 
     &--target {
-      margin-bottom: 26px;
+      margin-bottom: 28px;
       padding-left: 57px;
     }
 
@@ -320,7 +327,7 @@
   }
 
   .form__footer {
-    padding-top: 58px;
+    padding-top: 60px;
     padding-left: 70px;
     padding-right: 67px;
   }
@@ -332,8 +339,7 @@
 
   .form__footnote {
     text-align: left;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 10px;
   }
 }
 
@@ -378,6 +384,12 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      align-items: center;
+      padding-bottom: 57px;
+    }
+
+    &--comment {
+      padding-bottom: 57px;
     }
 
     &--add {
@@ -397,11 +409,19 @@
     }
   }
 
+  .form__input[name="mail"] {
+    padding-left: 20px;
+  }
+
   .form__footer {
-    padding-top: 65px;
+    padding-top: 67px;
     padding-left: 111px;
     padding-right: 110px;
     column-gap: 80px;
+  }
+
+  .form__footnote {
+    margin-top: 12px;
   }
 
   .form__to-submit {

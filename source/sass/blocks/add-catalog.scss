@@ -11,7 +11,8 @@
   position: relative;
   padding-right: 22px;
   margin-bottom: 34px;
-  margin-left: 20px;
+  padding-left: 19px;
+  margin-left: -20px;
   line-height: 24px;
   color: $title-black;
   background-color: $white;
@@ -41,8 +42,8 @@
   @include inline-block;
   position: relative;
   width: 165px;
-  margin-top: 65px;
-  padding-top: 123px;
+  margin-top: 64px;
+  padding-top: 122px;
   font-size: 16px;
   line-height: 20px;
   color: $white;
@@ -89,7 +90,7 @@
 
   .add-catalog__title {
     margin-bottom: 80px;
-    margin-left: 30px;
+    margin-left: 0;
     padding-left: 38px;
     padding-right: 38px;
     font-size: 36px;
@@ -112,7 +113,7 @@
   }
 
   .add-catalog__title {
-    margin-left: 71px;
+    margin-left: -40px;
   }
 
   .add-catalog__wrapper {

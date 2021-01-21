@@ -16,7 +16,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 2px;
     left: 0;
     width: 60px;
     height: 60px;
@@ -47,21 +47,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
     counter-reset: featuresList;
-    padding-right: 70px;
+    padding-right: 79px;
   }
 
   .features__item {
-    width: 252px;
+    width: 245px;
     padding-left: 0;
-    padding-top: 112px;
+    padding-top: 111px;
     padding-bottom: 60px;
     z-index: 1;
-    margin-bottom: 73px;
+    margin-bottom: 74px;
+
 
     &::before {
       width: 80px;
       height: 80px;
+      top: 0;
     }
 
     &::after {
@@ -69,10 +72,22 @@
       counter-increment: featuresList;
       content: counter(featuresList);
       position: absolute;
-      top: 90px;
-      left: 115px;
+      top: 89px;
+      left: 113px;
       color: $bg-grey;
       z-index: -1;
+    }
+
+    &--leaf {
+      &::after {
+        left: 118px;
+      }
+    }
+
+    &--water {
+      &::after {
+        left: 111px;
+      }
     }
 
     &--food,
@@ -89,5 +104,6 @@
 
   .features__item {
     margin-bottom: 0;
+    padding-top: 112px;
   }
 }
